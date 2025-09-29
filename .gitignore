@@ -357,3 +357,6 @@ MigrationBackup/
 
 # tool settings
 **/stn-settings/*
+/App/AS_DEBUG
+App/StickyNotes(debug).exe
+App/config/config.json
