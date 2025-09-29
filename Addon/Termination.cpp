@@ -29,7 +29,7 @@ namespace stn
 			STN_DEBUG_BREAK(false);
 			return;
 		}
-		Logger << U"設定ファイルを出力完了";
+		Logger << U"設定ファイルの出力に成功";
 		Logger << APP_SETTING_FILE_PATH;
 	}
 
