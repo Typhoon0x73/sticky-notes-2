@@ -118,6 +118,9 @@
   <ItemGroup>
     <ClCompile Include="Addon\Termination.cpp" />
     <ClCompile Include="Config\Config.cpp" />
+    <ClCompile Include="DebugLog\DebugLog.cpp" />
+    <ClCompile Include="DrawObject\DrawObject.cpp" />
+    <ClCompile Include="DrawObject\DrawObjectManager.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="State\Idle\IdleState.cpp" />
     <ClCompile Include="State\Init\InitState.cpp" />
@@ -335,6 +338,13 @@
     <ClInclude Include="AppDefine.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="Config\Config.h" />
+    <ClInclude Include="DebugLog\DebugLog.h" />
+    <ClInclude Include="DrawObject\DrawObject.h" />
+    <ClInclude Include="DrawObject\DrawObjectManager.h" />
+    <ClInclude Include="DrawObject\LayerDefine.h" />
+    <ClInclude Include="ServiceLocator\Locator.h" />
+    <ClInclude Include="ServiceLocator\SingletonLocator.h" />
+    <ClInclude Include="Singleton\Singleton.h" />
     <ClInclude Include="State\Idle\IdleState.h" />
     <ClInclude Include="State\Init\InitState.h" />
     <ClInclude Include="State\MainMenu\MainMenuState.h" />
@@ -426,6 +436,11 @@
     <None Include="App\example\shader\hlsl\terrain_normal.hlsl">
       <FileType>Document</FileType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ThirdParty\NocoUI\NocoUI.vcxproj">
+      <Project>{557d3fbd-c267-4eb1-8ad6-2c19af884151}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

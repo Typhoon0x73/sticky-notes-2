@@ -360,3 +360,5 @@ MigrationBackup/
 /App/AS_DEBUG
 App/StickyNotes(debug).exe
 App/config/config.json
+ThirdParty/NocoUI/*
+!ThirdParty/NocoUI/clone_NocoUI.bat

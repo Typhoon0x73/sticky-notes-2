@@ -1,0 +1,152 @@
+﻿{
+  "children": [
+    {
+      "activeSelf": true,
+      "children": [],
+      "childrenLayout": {
+        "horizontalAlign": "Left",
+        "padding": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "spacing": 4.0,
+        "type": "HorizontalLayout",
+        "verticalAlign": "Middle"
+      },
+      "clippingEnabled": false,
+      "components": [
+        {
+          "blendMode": "Normal",
+          "cornerRadius": 15.0,
+          "fillColor": [
+            255,
+            255,
+            255,
+            220
+          ],
+          "fillGradationColor1": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "fillGradationColor2": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "fillGradationType": "None",
+          "outlineColor": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "outlineThicknessInner": 0.0,
+          "outlineThicknessOuter": 0.0,
+          "shadowBlur": 0.0,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "shadowOffset": [
+            2.0,
+            2.0
+          ],
+          "shadowSpread": 0.0,
+          "type": "RectRenderer"
+        }
+      ],
+      "decelerationRate": 0.2,
+      "dragScrollEnabled": true,
+      "hitPadding": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "horizontalScrollable": false,
+      "inheritChildrenHover": false,
+      "inheritChildrenPress": false,
+      "interactable": true,
+      "isHitTarget": true,
+      "name": "Property",
+      "region": {
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "posDelta": [
+          0.0,
+          0.0
+        ],
+        "sizeDelta": [
+          200.0,
+          400.0
+        ],
+        "sizeDeltaPivot": [
+          0.5,
+          0.5
+        ],
+        "type": "AnchorRegion"
+      },
+      "rubberBandScrollEnabled": true,
+      "styleState": "",
+      "transform": {
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "hitTestAffected": true,
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotation": 0.0,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "translate": [
+          0.0,
+          0.0
+        ]
+      },
+      "verticalScrollable": false,
+      "wheelScrollEnabled": true,
+      "zOrderInSiblings": 0
+    }
+  ],
+  "childrenLayout": {
+    "horizontalAlign": "Left",
+    "padding": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "spacing": [
+      0.0,
+      0.0
+    ],
+    "type": "FlowLayout",
+    "verticalAlign": "Top"
+  },
+  "referenceSize": [
+    800.0,
+    600.0
+  ],
+  "serializedVersion": 2,
+  "version": "0.2.0"
+}
