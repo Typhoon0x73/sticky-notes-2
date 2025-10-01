@@ -8,7 +8,6 @@
 # include "State/StateMachine.h"
 # include "State/Init/InitState.h"
 # include "State/Idle/IdleState.h"
-# include "State/MainMenu/MainMenuState.h"
 
 # include "ServiceLocator/SingletonLocator.h"
 # include "DrawObject/DrawObjectManager.h"
@@ -32,7 +31,6 @@ void Main()
 	stateMachine
 		.add<stn::InitState>(stn::State::Init)
 		.add<stn::IdleState>(stn::State::Idle)
-		.add<stn::MainMenuState>(stn::State::MainMenu)
 		.init(stn::State::Init);
 
 	while (System::Update())

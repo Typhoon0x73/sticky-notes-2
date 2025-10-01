@@ -7,7 +7,6 @@ namespace stn
 	{
 		Init,
 		Idle,
-		MainMenu,
 	};
 
 }

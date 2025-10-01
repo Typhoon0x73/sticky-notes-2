@@ -4,7 +4,7 @@
 
 namespace stn
 {
-
+	class MainMenu;
 	class IdleState : public IState<State>
 	{
 	public:
@@ -16,6 +16,10 @@ namespace stn
 		virtual void onUpdate() override;
 		virtual void onRelease() override;
 		virtual Optional<State> getNextState() const override;
+
+	private:
+
+		std::unique_ptr<MainMenu> m_pMainMenu;
 	};
 
 }

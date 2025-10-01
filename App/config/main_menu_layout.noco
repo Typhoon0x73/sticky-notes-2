@@ -22,14 +22,61 @@
           "clippingEnabled": true,
           "components": [
             {
+              "blendMode": "Normal",
+              "cornerRadius": 0.0,
+              "fillColor": [
+                248,
+                248,
+                248,
+                255
+              ],
+              "fillGradationColor1": [
+                255,
+                255,
+                255,
+                255
+              ],
+              "fillGradationColor2": [
+                255,
+                255,
+                255,
+                255
+              ],
+              "fillGradationType": "None",
+              "outlineColor": [
+                0,
+                0,
+                0,
+                255
+              ],
+              "outlineThicknessInner": {
+                "default": 0.0,
+                "hovered": 0.5
+              },
+              "outlineThicknessOuter": 0.0,
+              "shadowBlur": 0.0,
+              "shadowColor": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "shadowOffset": [
+                2.0,
+                2.0
+              ],
+              "shadowSpread": 0.0,
+              "type": "RectRenderer"
+            },
+            {
               "characterSpacing": [
                 0.0,
                 0.0
               ],
               "color": [
-                255,
-                255,
-                255,
+                8,
+                8,
+                8,
                 255
               ],
               "fontAssetName": "",
@@ -90,7 +137,7 @@
             }
           ],
           "decelerationRate": 0.2,
-          "dragScrollEnabled": true,
+          "dragScrollEnabled": false,
           "hitPadding": [
             0.0,
             0.0,
@@ -102,7 +149,7 @@
           "inheritChildrenPress": false,
           "interactable": true,
           "isHitTarget": true,
-          "name": "Node",
+          "name": "MainMenuFile",
           "region": {
             "flexibleWeight": 0.0,
             "margin": [
@@ -146,7 +193,7 @@
             ]
           },
           "verticalScrollable": false,
-          "wheelScrollEnabled": true,
+          "wheelScrollEnabled": false,
           "zOrderInSiblings": 0
         },
         {
@@ -167,14 +214,61 @@
           "clippingEnabled": true,
           "components": [
             {
+              "blendMode": "Normal",
+              "cornerRadius": 0.0,
+              "fillColor": [
+                248,
+                248,
+                248,
+                255
+              ],
+              "fillGradationColor1": [
+                255,
+                255,
+                255,
+                255
+              ],
+              "fillGradationColor2": [
+                255,
+                255,
+                255,
+                255
+              ],
+              "fillGradationType": "None",
+              "outlineColor": [
+                0,
+                0,
+                0,
+                255
+              ],
+              "outlineThicknessInner": {
+                "default": 0.0,
+                "hovered": 0.5
+              },
+              "outlineThicknessOuter": 0.0,
+              "shadowBlur": 0.0,
+              "shadowColor": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "shadowOffset": [
+                2.0,
+                2.0
+              ],
+              "shadowSpread": 0.0,
+              "type": "RectRenderer"
+            },
+            {
               "characterSpacing": [
                 0.0,
                 0.0
               ],
               "color": [
-                255,
-                255,
-                255,
+                8,
+                8,
+                8,
                 255
               ],
               "fontAssetName": "",
@@ -235,7 +329,7 @@
             }
           ],
           "decelerationRate": 0.2,
-          "dragScrollEnabled": true,
+          "dragScrollEnabled": false,
           "hitPadding": [
             0.0,
             0.0,
@@ -247,7 +341,7 @@
           "inheritChildrenPress": false,
           "interactable": true,
           "isHitTarget": true,
-          "name": "Node",
+          "name": "MainMenuEdit",
           "region": {
             "flexibleWeight": 0.0,
             "margin": [
@@ -291,7 +385,7 @@
             ]
           },
           "verticalScrollable": false,
-          "wheelScrollEnabled": true,
+          "wheelScrollEnabled": false,
           "zOrderInSiblings": 0
         }
       ],
@@ -311,7 +405,52 @@
         "verticalAlign": "Top"
       },
       "clippingEnabled": false,
-      "components": [],
+      "components": [
+        {
+          "blendMode": "Normal",
+          "cornerRadius": 0.0,
+          "fillColor": [
+            248,
+            248,
+            248,
+            255
+          ],
+          "fillGradationColor1": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "fillGradationColor2": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "fillGradationType": "None",
+          "outlineColor": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "outlineThicknessInner": 0.0,
+          "outlineThicknessOuter": 0.0,
+          "shadowBlur": 0.0,
+          "shadowColor": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "shadowOffset": [
+            2.0,
+            2.0
+          ],
+          "shadowSpread": 0.0,
+          "type": "RectRenderer"
+        }
+      ],
       "decelerationRate": 0.2,
       "dragScrollEnabled": true,
       "hitPadding": [
@@ -325,7 +464,7 @@
       "inheritChildrenPress": false,
       "interactable": true,
       "isHitTarget": true,
-      "name": "Node2",
+      "name": "MainMenu",
       "region": {
         "flexibleWeight": 1.0,
         "margin": [
