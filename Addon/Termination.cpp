@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+﻿#include <Siv3D.hpp>
 #include "Termination.h"
 #include "AppDefine.h"
 #include "Config/Config.h"

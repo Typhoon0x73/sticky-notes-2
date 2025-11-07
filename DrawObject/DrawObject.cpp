@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+﻿#include <Siv3D.hpp>
 #include "DrawObject.h"
 #include "DrawObjectManager.h"
 #include "ServiceLocator/SingletonLocator.h"

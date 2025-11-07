@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+﻿#include <Siv3D.hpp>
 #include "DrawObjectManager.h"
 #include "DrawObject.h"
 #include "DebugLog/DebugLog.h"

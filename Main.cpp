@@ -4,17 +4,11 @@
 # include "Config/Config.h"
 # include "Addon/Termination.h"
 
-# include "State/StateDefine.h"
-# include "State/StateMachine.h"
-# include "State/Init/InitState.h"
-# include "State/Idle/IdleState.h"
-
 # include "ServiceLocator/SingletonLocator.h"
 # include "DrawObject/DrawObjectManager.h"
 
 void Main()
 {
-	noco::Init();
 
 	Window::SetTitle(stn::APP_NAME);
 	Window::SetStyle(WindowStyle::Sizable);
@@ -27,17 +21,9 @@ void Main()
 	Addon::Register<stn::Termination>(U"Termination");
 
 	// アプリのステートを登録
-	stn::StateMachine<stn::State> stateMachine;
-	stateMachine
-		.add<stn::InitState>(stn::State::Init)
-		.add<stn::IdleState>(stn::State::Idle)
-		.init(stn::State::Init);
 
 	while (System::Update())
 	{
-		bool isSucceeded = stateMachine.update();
-		STN_DEBUG_BREAK(isSucceeded);
-
 		drawManager.draw();
 	}
 }

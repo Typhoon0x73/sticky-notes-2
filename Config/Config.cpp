@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+﻿#include <Siv3D.hpp>
 #include "Config.h"
 
 namespace stn
