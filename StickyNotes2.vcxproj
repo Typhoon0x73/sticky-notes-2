@@ -119,6 +119,7 @@
     <ClCompile Include="Addon\Termination.cpp" />
     <ClCompile Include="Config\Config.cpp" />
     <ClCompile Include="DebugLog\DebugLog.cpp" />
+    <ClCompile Include="DragEditRect\DragEditRect.cpp" />
     <ClCompile Include="DrawObject\DrawObject.cpp" />
     <ClCompile Include="DrawObject\DrawObjectManager.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -337,6 +338,7 @@
     <ClInclude Include="Common.h" />
     <ClInclude Include="Config\Config.h" />
     <ClInclude Include="DebugLog\DebugLog.h" />
+    <ClInclude Include="DragEditRect\DragEditRect.h" />
     <ClInclude Include="DrawObject\DrawObject.h" />
     <ClInclude Include="DrawObject\DrawObjectManager.h" />
     <ClInclude Include="DrawObject\LayerDefine.h" />
