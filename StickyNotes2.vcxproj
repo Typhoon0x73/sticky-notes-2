@@ -117,6 +117,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Addon\Termination.cpp" />
+    <ClCompile Include="Camera\DragCamera2D.cpp" />
     <ClCompile Include="Config\Config.cpp" />
     <ClCompile Include="DebugLog\DebugLog.cpp" />
     <ClCompile Include="DoubleClick\DoubleClick.cpp" />
@@ -338,6 +339,7 @@
   <ItemGroup>
     <ClInclude Include="Addon\Termination.h" />
     <ClInclude Include="AppDefine.h" />
+    <ClInclude Include="Camera\DragCamera2D.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="Config\Config.h" />
     <ClInclude Include="DebugLog\DebugLog.h" />
