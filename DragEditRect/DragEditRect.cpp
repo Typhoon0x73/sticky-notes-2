@@ -14,24 +14,32 @@ namespace
 		DragFrameDir_BottomLeft = DragFrameDir_Bottom | DragFrameDir_Left,
 		DragFrameDir_BottomRight = DragFrameDir_Bottom | DragFrameDir_Right,
 	};
+
+	constexpr double CornerHitRadius = 1.75;
+	constexpr double LineHitThickness = CornerHitRadius * 2.0;
 }
 
 namespace stn
 {
-	DragEditRect::UpdateResult DragEditRect::update()
+	auto DragEditRect::update() -> UpdateResult
 	{
 		const int32 dir = mouseOverDir();
 		const bool isDraggingFrame = isDragFrame();
 		const auto& cursorStyle = getCursorStyle(isDraggingFrame ? m_dragFrameDir : dir);
-		Cursor::RequestStyle(cursorStyle);
+		if (cursorStyle != CursorStyle::Default)
+		{
+			Cursor::RequestStyle(cursorStyle);
+		}
 
 		if (MouseL.down())
 		{
 			m_dragFrameDir = dir;
+			m_isDragging = true;
 		}
 		if (MouseL.up())
 		{
 			m_dragFrameDir = DragFrameDir_None;
+			m_isDragging = false;
 			return UpdateResult::Release;
 		}
 		if (isDraggingFrame)
@@ -41,7 +49,7 @@ namespace stn
 				return UpdateResult::Resize;
 			}
 		}
-		else if (mouseOver() && MouseL.pressed())
+		else if (m_isDragging && MouseL.pressed())
 		{
 			if (dragMove())
 			{
@@ -51,6 +59,11 @@ namespace stn
 		return UpdateResult::None;
 	}
 
+	RectF DragEditRect::getEditRect() const
+	{
+		return stretched(LineHitThickness);
+	}
+
 	bool DragEditRect::isDragFrame() const
 	{
 		return m_dragFrameDir != DragFrameDir_None;
@@ -58,16 +71,14 @@ namespace stn
 
 	int32 DragEditRect::mouseOverDir() const
 	{
-		const double cornerHitRadius = 1.75;
-		const double lineHitThickness = 2.0;
-		const Circle cornerTopLeft{ tl(), cornerHitRadius };
-		const Circle cornerTopRight{ tr(), cornerHitRadius };
-		const Circle cornerBottomLeft{ bl(), cornerHitRadius };
-		const Circle cornerBottomRight{ br(), cornerHitRadius };
-		const auto& left = RectF::left().withThickness(lineHitThickness);
-		const auto& right = RectF::right().withThickness(lineHitThickness);
-		const auto& top = RectF::top().withThickness(lineHitThickness);
-		const auto& bottom = RectF::bottom().withThickness(lineHitThickness);
+		const Circle cornerTopLeft{ tl(), CornerHitRadius };
+		const Circle cornerTopRight{ tr(), CornerHitRadius };
+		const Circle cornerBottomLeft{ bl(), CornerHitRadius };
+		const Circle cornerBottomRight{ br(), CornerHitRadius };
+		const auto& left = RectF::left().withThickness(LineHitThickness);
+		const auto& right = RectF::right().withThickness(LineHitThickness);
+		const auto& top = RectF::top().withThickness(LineHitThickness);
+		const auto& bottom = RectF::bottom().withThickness(LineHitThickness);
 		if (cornerTopLeft.mouseOver()) { return DragFrameDir_TopLeft; }
 		else if (cornerTopRight.mouseOver()) { return DragFrameDir_TopRight; }
 		else if (cornerBottomLeft.mouseOver()) { return DragFrameDir_BottomLeft; }

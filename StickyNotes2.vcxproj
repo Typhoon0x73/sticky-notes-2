@@ -119,15 +119,18 @@
     <ClCompile Include="Addon\Termination.cpp" />
     <ClCompile Include="Config\Config.cpp" />
     <ClCompile Include="DebugLog\DebugLog.cpp" />
+    <ClCompile Include="DoubleClick\DoubleClick.cpp" />
     <ClCompile Include="DragEditRect\DragEditRect.cpp" />
     <ClCompile Include="DrawObject\DrawObject.cpp" />
     <ClCompile Include="DrawObject\DrawObjectManager.cpp" />
+    <ClCompile Include="EditableEffectString\EditableEffectString.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainMenu\MainMenu.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="StickyNote\StickyNote.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\engine\texture\box-shadow\128.png" />
@@ -338,15 +341,19 @@
     <ClInclude Include="Common.h" />
     <ClInclude Include="Config\Config.h" />
     <ClInclude Include="DebugLog\DebugLog.h" />
+    <ClInclude Include="DoubleClick\DoubleClick.h" />
     <ClInclude Include="DragEditRect\DragEditRect.h" />
     <ClInclude Include="DrawObject\DrawObject.h" />
     <ClInclude Include="DrawObject\DrawObjectManager.h" />
     <ClInclude Include="DrawObject\LayerDefine.h" />
+    <ClInclude Include="EditableEffectString\EditableEffectString.h" />
+    <ClInclude Include="FontKeyTable.h" />
     <ClInclude Include="MainMenu\MainMenu.h" />
     <ClInclude Include="ServiceLocator\Locator.h" />
     <ClInclude Include="ServiceLocator\SingletonLocator.h" />
     <ClInclude Include="Singleton\Singleton.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StickyNote\StickyNote.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App\example\obj\blacksmith.obj">

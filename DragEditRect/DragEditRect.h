@@ -19,10 +19,13 @@ namespace stn
 		virtual ~DragEditRect() = default;
 
 		
-		UpdateResult update();
+		auto update() -> UpdateResult;
+
+		RectF getEditRect() const;
 
 	private:
 
+		bool m_isDragging{ false };
 		int32 m_dragFrameDir{ 0 };
 
 		bool isDragFrame() const;

@@ -165,6 +165,15 @@
     <ClCompile Include="DragEditRect\DragEditRect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="EditableEffectString\EditableEffectString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleClick\DoubleClick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StickyNote\StickyNote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -867,6 +876,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DragEditRect\DragEditRect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditableEffectString\EditableEffectString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FontKeyTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleClick\DoubleClick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StickyNote\StickyNote.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
