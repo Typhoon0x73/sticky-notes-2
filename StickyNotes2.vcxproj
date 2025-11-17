@@ -118,6 +118,7 @@
   <ItemGroup>
     <ClCompile Include="Addon\Termination.cpp" />
     <ClCompile Include="Camera\DragCamera2D.cpp" />
+    <ClCompile Include="Command\CommandManager.cpp" />
     <ClCompile Include="Config\Config.cpp" />
     <ClCompile Include="DebugLog\DebugLog.cpp" />
     <ClCompile Include="DoubleClick\DoubleClick.cpp" />
@@ -318,6 +319,7 @@
     <None Include="App\example\toml\config.toml" />
     <None Include="App\example\toml\test.toml" />
     <None Include="App\example\zip\zip_test.zip" />
+    <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="App\example\shot.mp3" />
@@ -340,6 +342,9 @@
     <ClInclude Include="Addon\Termination.h" />
     <ClInclude Include="AppDefine.h" />
     <ClInclude Include="Camera\DragCamera2D.h" />
+    <ClInclude Include="Command\ChangeCommand\ChangeCommand.h" />
+    <ClInclude Include="Command\CommandManager.h" />
+    <ClInclude Include="Command\ICommand.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="Config\Config.h" />
     <ClInclude Include="DebugLog\DebugLog.h" />

@@ -12,6 +12,7 @@
 # include "DoubleClick/DoubleClick.h"
 # include "StickyNote/StickyNote.h"
 # include "Camera/DragCamera2D.h"
+# include "Command/CommandManager.h"
 
 namespace stn
 {
@@ -36,6 +37,7 @@ namespace stn
 
 		DragCamera2D m_camera;
 		Array<std::unique_ptr<StickyNote>> m_notes;
+		CommandManager m_commandManager;
 	};
 
 }
