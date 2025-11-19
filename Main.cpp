@@ -13,6 +13,7 @@
 # include "StickyNote/StickyNote.h"
 # include "Camera/DragCamera2D.h"
 # include "Command/CommandManager.h"
+# include "Background/Background.h"
 
 namespace stn
 {
@@ -20,21 +21,39 @@ namespace stn
 	{
 	public:
 
-		Board() = default;
+		Board()
+			: m_isActive{ false }
+			, m_camera{ Scene::CenterF() }
+			, m_notes{}
+			, m_commandManager{}
+		{
+		}
 		virtual ~Board() = default;
 
 		void update()
 		{
-
 		}
 
 		void draw() const
 		{
-
 		}
+
+		void activate()
+		{
+			m_isActive = true;
+			STN_GET_LOCATOR(BasicCamera2D).set(&m_camera);
+		}
+
+		void hide()
+		{
+			m_isActive = false;
+		}
+
+		bool isActive() const { return m_isActive; }
 
 	private:
 
+		bool m_isActive;
 		DragCamera2D m_camera;
 		Array<std::unique_ptr<StickyNote>> m_notes;
 		CommandManager m_commandManager;
@@ -62,20 +81,24 @@ void Main()
 	stn::DrawObjectManager drawManager;
 	STN_GET_LOCATOR(stn::DrawObjectManager).set(&drawManager);
 
+	// 背景
+	stn::Background background;
+
 	// アドオンの登録
 	Addon::Register<stn::Termination>(U"Termination");
 
-	stn::StickyNote note{ RectF{ 100, 100, 100, 100 }, 16, FontStyle::Bold, U"BOLD" };
+	stn::Board board;
+	board.activate();
 	
 	while (System::Update())
 	{
 		Cursor::RequestStyle(CursorStyle::Default);
-		if (MouseL.down())
+
+		if (board.isActive())
 		{
-			note.setSelect(note.getRect().mouseOver());
+			board.update();
+			board.draw();
 		}
-		note.update();
-		note.draw();
 
 		drawManager.draw();
 	}

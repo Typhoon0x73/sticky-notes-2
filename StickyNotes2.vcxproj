@@ -117,6 +117,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Addon\Termination.cpp" />
+    <ClCompile Include="Background\Background.cpp" />
     <ClCompile Include="Camera\DragCamera2D.cpp" />
     <ClCompile Include="Command\CommandManager.cpp" />
     <ClCompile Include="Config\Config.cpp" />
@@ -341,6 +342,7 @@
   <ItemGroup>
     <ClInclude Include="Addon\Termination.h" />
     <ClInclude Include="AppDefine.h" />
+    <ClInclude Include="Background\Background.h" />
     <ClInclude Include="Camera\DragCamera2D.h" />
     <ClInclude Include="Command\ChangeCommand\ChangeCommand.h" />
     <ClInclude Include="Command\CommandManager.h" />
